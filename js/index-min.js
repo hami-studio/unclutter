@@ -1,0 +1,1 @@
+function init(){function e(e){var t,n;e.target.overset&&(n=document.createElement("section"),n.className="myregions",t=document.getElementById("container"),t.appendChild(n))}var t=document.getNamedFlow("article");t.addEventListener("regionfragmentchange",e),e({target:t})}window.addEventListener("load",init);
