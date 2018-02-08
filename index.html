@@ -1,41 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Regions</title>
-  <link rel="stylesheet" href="css/style-min.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='js/cssregions.js'></script>
-  <script src="js/index.js"></script>
-</head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Unclutter—Storytelling Experiments</title>
+    <meta name="author" content="Hami">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
-  <article id="container">
-      <section class="myregions region-small-height"></section>
-  </article>
-  <div id="source">
-    <p>Honey, I'm home.</p>
+    <link rel="stylesheet" href="css/multicol.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <main role="main">
+      <section id="scene" class="scroller">
+        <article data-depth="0.50" class="content">
+          <p>Honey, I'm home.</p>
 
-    <p>I'd come home after a week. Travel on work as usual. I was in Mumbai. In June, Delhi had turned into a furnace. With no vents whatsoever. I climbed up the stairs to the top floor of my apartment building. On reaching outside the door I keyed the lock - to find that the door was open already. It perturbed me.</p>
+          <p>I'd come home after a week. Travel on work as usual. I was in Mumbai. In June, Delhi had turned into a furnace. With no vents whatsoever. I climbed up the stairs to the top floor of my apartment building. On reaching outside the door I keyed the lock - to find that the door was open already. It perturbed me.</p>
 
-    <p>I toed in cautiously. Taking hold of a baseball bat. To make ensure my safety. Inside, there was no place to walk. The whole place was in disarray. Objects strewn across the drawing room. At places there was blood too. My first instinct was to call my wife. She didn't answer. I could hear her phone ring but she wasn't anywhere to be found. I felt weak inside and apprehensive.</p>
+          <p>I toed in cautiously. Taking hold of a baseball bat. To ensure my safety. Inside, there was no place to walk. The whole place was in disarray. Objects strewn across the drawing room. At places there was blood too. My first instinct was to call my wife. She didn't answer. I could hear her phone ring but she wasn't anywhere to be found. I felt weak inside and apprehensive.</p>
 
-    <p>Immediately, I called up police. They said they'd arrive in 10 minutes. Meanwhile, I noticed there was a trail of blood leading to the balcony. I gently pushed the door ajar. Outside, there was more blood. But the clothesline with all the clothes on it made it hard for me to inspect. Constantly the bedsheets flailed on my face. When I reached the other end I saw my wife battering the head of a monkey. She turned around with a manic look in her eyes screaming like her words seemed stifled by a shock. Just then the police walked out on the balcony. I was holding a baseball bat and my wife was drenched in blood. As I turned to explain I heard a shot.</p>
+          <p>Immediately, I called up police. They said they'd arrive in 10 minutes. Meanwhile, I noticed there was a trail of blood leading to the balcony. I gently pushed the door ajar. Outside, there was more blood. But the clothesline with all the clothes on it made it hard for me to inspect. Constantly the bedsheets flailed on my face. When I reached the other end I saw my wife battering the head of a monkey. She turned around with a manic look in her eyes screaming like her words seemed stifled by a shock. Just then the police walked out on the balcony. I was holding a baseball bat and my wife was drenched in blood. As I turned to explain I heard a shot.</p>
 
-    <p class="end">Black out.</p>
-  </div>
+          <p>Black out.</p>
+        </article>
 
-  <script src="js/jquery.mousewheel.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('html, body, *').mousewheel(function(e, delta) {
-        this.scrollLeft += (delta * -1);
-        e.preventDefault();
-      });
-    });
-  </script>
+      </section>
+    </main>
 
-</body>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+    	var scene = document.getElementById('scene');
+    	var parallax = new Parallax(scene);
+  	</script>
+
+  </body>
 </html>
