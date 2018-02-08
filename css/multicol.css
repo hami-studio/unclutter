@@ -50,3 +50,12 @@ p::after {
   color: transparent;
   display: block;
 }
+
+@media screen and (max-width: 600px) {
+  .content{
+    column-width: 80vw;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+}
